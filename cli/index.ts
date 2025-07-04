@@ -14,7 +14,7 @@ program
   .description(
     "A professional CLI tool for creating experimental JavaScript/TypeScript projects",
   )
-  .version("1.0.1", "-v, --version")
+  .version("1.0.4", "-v, --version")
 
 // Add templates command
 program

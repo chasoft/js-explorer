@@ -1,6 +1,6 @@
 {
   "name": "chasoft",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A CLI tool for quickly setting up JavaScript/TypeScript experimental projects",
   "type": "module",
   "main": "dist/cli/index.js",
@@ -14,7 +14,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "bun build cli/index.ts --outdir dist/cli --target node",
+    "build": "bun run scripts/version-inc.ts && bun build cli/index.ts --outdir dist/cli --target node",
     "dev": "bun run cli/index.ts",
     "prepublishOnly": "bun run build && chmod +x dist/cli/index.js",
     "test:local": "node dist/cli/index.js",
