@@ -1,12 +1,12 @@
 {
   "name": "{{projectName}}",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript experimental project",
   "type": "module",
   "scripts": {
-    "dev": "bun --watch index.ts",
-    "start": "bun index.ts",
-    "build": "bun build index.ts --outdir dist",
+    "dev": "bun index.html",
+    "start": "bun index.html",
+    "build": "bun build index.html --outdir dist",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {

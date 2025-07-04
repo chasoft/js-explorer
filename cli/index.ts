@@ -14,7 +14,7 @@ program
   .description(
     "A professional CLI tool for creating experimental JavaScript/TypeScript projects",
   )
-  .version("1.0.0")
+  .version("1.0.1", "-v, --version")
 
 // Add templates command
 program
@@ -77,7 +77,7 @@ if (!isSubcommand) {
     )
     .option("-o, --overwrite", "Overwrite files without prompting")
     .option(
-      "-v, --var <key=value>",
+      "--var <key=value>",
       "Set custom template variables (can be used multiple times)",
       (value: string, previous: Record<string, string>) => {
         const vars = previous || {}

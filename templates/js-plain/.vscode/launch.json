@@ -1,24 +1,24 @@
 {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "configurations": [
         {
-            "name": "Launch with Bun",
+            "name": "Launch App",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceFolder}/index.js",
+            "program": "${workspaceFolder}/index.html",
             "runtimeExecutable": "bun",
-            "runtimeArgs": ["--watch"],
             "console": "integratedTerminal",
             "env": {
                 "NODE_ENV": "development"
             }
         },
         {
-            "name": "Debug JavaScript",
+            "name": "Debug App",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceFolder}/index.js",
+            "program": "${workspaceFolder}/index.html",
             "runtimeExecutable": "bun",
+            "runtimeArgs": ["--inspect"],
             "console": "integratedTerminal",
             "stopOnEntry": false
         }
