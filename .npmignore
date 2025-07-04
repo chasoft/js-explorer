@@ -1,0 +1,44 @@
+# Development files
+cli/
+src/
+*.ts
+tsconfig.json
+bun.lock
+
+# Build tools
+.vscode/
+.idea/
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.*
+*.spec.*
+
+# Documentation
+docs/
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Other
+bin.js
+index.ts

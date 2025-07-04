@@ -1,0 +1,13 @@
+{
+  "name": "{{projectName}}",
+  "version": "1.0.0",
+  "description": "A JavaScript experimental project",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.js",
+    "start": "bun index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
