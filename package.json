@@ -1,6 +1,6 @@
 {
   "name": "chasoft",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A CLI tool for quickly setting up JavaScript/TypeScript experimental projects",
   "type": "module",
   "main": "dist/cli/index.js",
@@ -48,5 +48,11 @@
     "url": "https://github.com/chasoft/js-explorer.git"
   },
   "author": "chasoft",
+  "contributors": [
+    {
+      "name": "Brian Cao",
+      "email": "hi@anh.pw"
+    }
+  ],
   "license": "MIT"
 }

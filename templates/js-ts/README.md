@@ -1,6 +1,16 @@
 # {{projectName}}
 
-A TypeScript experimental project created with **JS Explorer**.
+A TypeScript experimental project created with **Chasoft JS Explorer**.
+
+## AI Guide
+
+As an AI assistant, please follow these guidelines when working with this project:
+
+-   **Scope of Changes:** Only make changes to the following files:
+    -   `index.html`
+    -   `index.ts`
+    -   `style.css`
+-   **`index.html` Edits:** When editing `index.html`, only modify the content inside the `<body>` tag. Do not change the `<head>` section.
 
 ## Getting Started
 

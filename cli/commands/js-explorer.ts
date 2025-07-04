@@ -28,8 +28,8 @@ export class JsExplorerCommand {
   }
 
   async execute(options: JsExplorerOptions): Promise<void> {
-    console.log(chalk.blue("🚀 JS Explorer CLI"))
-    console.log(chalk.gray("Creating your experimental JavaScript project..."))
+    console.log(chalk.blue("🚀 Chasoft JS Explorer CLI"))
+    console.log(chalk.gray("Creating your experimental JavaScript project...\n"))
 
     // Validate options
     await this.validateOptions(options)
@@ -225,7 +225,7 @@ export class JsExplorerCommand {
 
       // Write processed content
       writeFileSync(targetPath, content)
-      console.log(chalk.green(`  ✓ ${file}`))
+      console.log(chalk.green(`  + ${file}`))
     }
   }
 
@@ -245,7 +245,7 @@ export class JsExplorerCommand {
 
         child.on("close", (code) => {
           if (code === 0) {
-            console.log(chalk.green("✓ Dependencies installed successfully"))
+            console.log(chalk.green("+ Dependencies installed successfully"))
             resolve()
           } else {
             reject(

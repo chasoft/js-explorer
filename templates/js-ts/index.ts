@@ -1,5 +1,5 @@
 // {{projectName}} - TypeScript Experimental Project
-// Created with JS Explorer
+// Created with Chasoft JS Explorer
 
 interface ProjectInfo {
   name: string

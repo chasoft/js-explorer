@@ -1,18 +1,4 @@
-# js-explorer
-
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-# JS Explorer
+# Chasoft JS Explorer
 
 A professional CLI tool for quickly setting up JavaScript/TypeScript experimental projects, designed to be an alternative to online playgrounds like JSFiddle but with local development power and AI assistance.
 
@@ -28,12 +14,12 @@ A professional CLI tool for quickly setting up JavaScript/TypeScript experimenta
 
 ## Installation
 
-### Global Installation
+### Global Installation (recommended)
 ```bash
-bun install -g js-explorer
+bun install -g chasoft
 ```
 
-### Use with bunx (recommended)
+### Use with bunx
 ```bash
 bunx chasoft -e -t js-plain -n my-experiment
 ```
@@ -156,7 +142,7 @@ Templates will prompt for any undefined variables found in template files.
 
 MIT License - see LICENSE file for details.
 
-## Why JS Explorer?
+## Why Chasoft JS Explorer?
 
 - **Local Development**: Full power of your local environment
 - **AI Integration**: Perfect for AI-assisted coding sessions
@@ -166,3 +152,5 @@ MIT License - see LICENSE file for details.
 - **VS Code Ready**: Instant debugging and development setup
 
 Start experimenting today! 🚀
+
+Happy Coding ♥️ Brian Cao

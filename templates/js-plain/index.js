@@ -1,5 +1,5 @@
 // {{projectName}} - JavaScript Experimental Project
-// Created with JS Explorer
+// Created with Chasoft JS Explorer
 
 console.log("🚀 Welcome to {{projectName}}!")
 
