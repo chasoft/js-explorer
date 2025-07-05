@@ -10,7 +10,6 @@ import {
 } from "fs"
 import { basename, dirname, join } from "path"
 import prompts from "prompts"
-import { promisify } from "util"
 import type { JsExplorerOptions, TemplateVariable } from "../types.js"
 
 export class JsExplorerCommand {

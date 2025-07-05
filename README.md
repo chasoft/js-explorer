@@ -14,6 +14,21 @@ A professional CLI tool for quickly setting up JavaScript/TypeScript experimenta
 
 ## Installation
 
+## Prerequisites
+
+Before installing Chasoft JS Explorer, you must have Bun installed on your system.
+
+### Install Bun
+```bash
+# macOS and Linux
+curl -fsSL https://bun.sh/install | bash
+
+# Windows (PowerShell)
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+For more installation options, visit [bun.sh](https://bun.sh/docs/installation)
+
 ### Global Installation (recommended)
 ```bash
 bun install -g chasoft
