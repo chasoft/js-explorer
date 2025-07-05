@@ -18,6 +18,7 @@ This project includes:
 - `index.html` - The main HTML file with a TypeScript demo
 - `index.ts` - TypeScript file for your type-safe experiments
 - `style.css` - Styling for your project
+- `vite.config.ts` - Vite configuration
 - `tsconfig.json` - TypeScript configuration
 - VS Code debugging configuration with TypeScript support
 
@@ -25,19 +26,18 @@ This project includes:
 
 ### Using Terminal
 ```bash
-bun dev          # Start development server with hot reload
-bun start        # Run the project once
-bun build        # Build the TypeScript project
+bun dev          # Start development server with hot reload (Vite)
+bun build        # Build for production
+bun preview      # Preview the production build
 bun type-check   # Check TypeScript types without compilation
 ```
 
 ### Using VS Code
 1. Open the "Run and Debug" tab (Ctrl+Shift+D)
 2. Select one of the available configurations:
-   - **Launch TypeScript with Bun** - Run with hot reload
-   - **Debug TypeScript** - Debug your TypeScript code
-   - **Type Check** - Check types without running
-3. Click the play button to start
+   - **Launch** - Opens the project in your browser with the dev server running.
+   - **Type Check** - Check types without running.
+3. Click the play button to start.
 
 ## Project Structure
 
@@ -47,9 +47,11 @@ bun type-check   # Check TypeScript types without compilation
 ├── index.ts            # TypeScript experiments
 ├── style.css           # Styling
 ├── package.json        # Project configuration
+├── vite.config.ts      # Vite configuration
 ├── tsconfig.json       # TypeScript configuration
 └── .vscode/
-    └── launch.json     # VS Code debug configuration
+    ├── launch.json     # VS Code debug configuration
+    └── tasks.json      # VS Code task configuration
 ```
 
 ## TypeScript Features
@@ -71,6 +73,7 @@ This template demonstrates:
 
 ## TypeScript Resources
 
+- [Vite Documentation](https://vitejs.dev/)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 - [Bun with TypeScript](https://bun.sh/docs/runtime/typescript)
 - [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)

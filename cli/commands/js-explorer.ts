@@ -300,8 +300,8 @@ export class JsExplorerCommand {
       console.log(chalk.gray(`  cd ${targetName}`))
     }
 
+    console.log(chalk.gray("  bun install      # Install dependencies"))
     console.log(chalk.gray("  bun dev          # Start development server"))
-    console.log(chalk.gray('  # or use VS Code "Run and Debug" tab'))
     console.log()
   }
 }

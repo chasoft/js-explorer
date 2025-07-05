@@ -14,7 +14,7 @@ program
   .description(
     "A professional CLI tool for creating experimental JavaScript/TypeScript projects",
   )
-  .version("1.0.5", "-v, --version")
+  .version("2.0.0", "-v, --version")
 
 // Add templates command
 program
@@ -70,7 +70,7 @@ if (!isSubcommand) {
       "-n, --name <project-name>",
       "Project folder name (default: current directory)",
     )
-    .option("-i, --install", "Install dependencies automatically")
+    .option("--no-install", "Do not install dependencies automatically")
     .option(
       "-u, --update",
       "Update an existing project with the selected template",

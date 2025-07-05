@@ -18,20 +18,22 @@ This project includes:
 - `index.html` - The main HTML file with a simple demo
 - `index.js` - JavaScript file for your experiments
 - `style.css` - Styling for your project
+- `vite.config.js` - Vite configuration
 - VS Code debugging configuration
 
 ## Development
 
 ### Using Terminal
 ```bash
-bun dev          # Start development server with hot reload
-bun start        # Run the project once
+bun dev          # Start development server with hot reload (Vite)
+bun build        # Build for production
+bun preview      # Preview the production build
 ```
 
 ### Using VS Code
 1. Open the "Run and Debug" tab (Ctrl+Shift+D)
-2. Select "Launch with Bun" or "Debug JavaScript"
-3. Click the play button to start
+2. Select "Launch" from the dropdown menu.
+3. Click the play button to start. This will open the project in your browser.
 
 ## Project Structure
 
@@ -41,8 +43,10 @@ bun start        # Run the project once
 ├── index.js            # JavaScript experiments
 ├── style.css           # Styling
 ├── package.json        # Project configuration
+├── vite.config.js      # Vite configuration
 └── .vscode/
-    └── launch.json     # VS Code debug configuration
+    ├── launch.json     # VS Code debug configuration
+    └── tasks.json      # VS Code task configuration
 ```
 
 ## Experimentation Tips
@@ -55,6 +59,7 @@ bun start        # Run the project once
 
 ## Resources
 
+- [Vite Documentation](https://vitejs.dev/)
 - [Bun Documentation](https://bun.sh/docs)
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [JavaScript.info](https://javascript.info/)
