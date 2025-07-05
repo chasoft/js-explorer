@@ -5,6 +5,7 @@ export interface JsExplorerOptions {
   install?: boolean
   update?: boolean
   overwrite?: boolean
+  empty?: boolean
   var?: Record<string, string>
 }
 

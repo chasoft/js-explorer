@@ -214,8 +214,33 @@ export class JsExplorerCommand {
       // Create directory if it doesn't exist
       mkdirSync(dirname(targetPath), { recursive: true })
 
-      // Read file content
-      let content = readFileSync(sourcePath, "utf-8")
+      let content: string
+
+      if (options.empty) {
+        const fileName = basename(file)
+        if (fileName === "index.js" || fileName === "index.ts" || fileName === "style.css") {
+          content = ""
+        } else if (fileName === "index.html") {
+          // Read original content to preserve head
+          const originalContent = readFileSync(sourcePath, "utf-8")
+          const headMatch = originalContent.match(/<head>[\s\S]*<\/head>/)
+          const scriptTagMatch = originalContent.match(/<script.*><\/script>/)
+
+          let emptyBody = `<body>\n\n`
+          if (scriptTagMatch) {
+            emptyBody += `    ${scriptTagMatch[0]}\n`
+          }
+          emptyBody += `</body>`
+
+          content = `<!DOCTYPE html>\n<html lang="en">\n${headMatch ? headMatch[0] : "<head></head>"
+            }\n${emptyBody}\n</html>`
+        } else {
+          content = readFileSync(sourcePath, "utf-8")
+        }
+      } else {
+        // Read file content
+        content = readFileSync(sourcePath, "utf-8")
+      }
 
       // Replace variables
       for (const [key, value] of Object.entries(variables)) {

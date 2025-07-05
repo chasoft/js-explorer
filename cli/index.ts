@@ -76,6 +76,7 @@ if (!isSubcommand) {
       "Update an existing project with the selected template",
     )
     .option("-o, --overwrite", "Overwrite files without prompting")
+    .option("--empty", "Initialize project with empty files")
     .option(
       "--var <key=value>",
       "Set custom template variables (can be used multiple times)",
@@ -111,6 +112,7 @@ if (!isSubcommand) {
           install: options.install,
           update: options.update,
           overwrite: options.overwrite,
+          empty: options.empty,
           var: options.var,
         }
 
