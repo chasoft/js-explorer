@@ -40,6 +40,23 @@ bun install -g chasoft
 bunx chasoft -e -t js-plain -n my-experiment
 ```
 
+## Troubleshooting
+
+### PowerShell Execution Policy on Windows
+
+If you encounter the following error in PowerShell on Windows:
+
+```powershell
+PS C:> chasoft -v
+chasoft : File C:\Users\user\AppData\Roaming\npm\chasoft.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+```
+
+This is due to PowerShell's script execution policy. To resolve this, run the following command in your PowerShell terminal:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 ## Usage
 
 ### Basic Usage
