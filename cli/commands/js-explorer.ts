@@ -10,6 +10,7 @@ import {
 } from "fs"
 import { basename, dirname, join } from "path"
 import prompts from "prompts"
+import { fileURLToPath } from "url"
 import type { JsExplorerOptions, TemplateVariable } from "../types.js"
 
 export class JsExplorerCommand {
@@ -20,7 +21,7 @@ export class JsExplorerCommand {
     // Get the templates directory relative to the project root
     // When built, the CLI is in dist/cli/ and templates are in templates/
     this.templatesDir = join(
-      dirname(dirname(dirname(import.meta.url.replace("file://", "")))),
+      dirname(dirname(dirname(fileURLToPath(import.meta.url)))),
       "templates",
     )
     this.currentDir = process.cwd()
