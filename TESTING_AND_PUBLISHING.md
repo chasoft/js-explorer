@@ -106,6 +106,24 @@ npm install -g chasoft
 bunx chasoft -e -t js-plain -n test-project
 ```
 
+### Troubleshooting
+
+#### `npm login` error in WSL (Windows Subsystem for Linux)
+
+If you are using WSL and encounter the following error when running `npm login`:
+
+```
+npm error Set the BROWSER environment variable to your desired browser.
+```
+
+This happens because npm is trying to open a web browser for authentication and cannot find one in the WSL environment. To fix this, you can tell npm to use your Windows default browser by running this command in your WSL terminal before `npm login`:
+
+```bash
+export BROWSER="cmd.exe /C start"
+```
+
+Then, try running `npm login` again.
+
 ### After Publishing
 
 Users worldwide can now use your CLI in two ways:
