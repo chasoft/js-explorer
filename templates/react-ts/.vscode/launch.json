@@ -1,0 +1,21 @@
+{
+    "version": "0.3.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "msedge",
+            "request": "launch",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "dev"
+        },
+        {
+            "name": "Type Check",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/typescript/bin/tsc",
+            "args": ["--noEmit"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
